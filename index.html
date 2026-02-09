@@ -52,19 +52,9 @@
   </style>
 </head>
 <script 
-src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-function showLove() {
-  swal({
-    title: "Dipti ji ❤️",
-    text: "Aap meri zindagi ki sabse pyaari chocolate ho.\nI Love You Today, Tomorrow & Forever 🥰🍫",
-    icon: "success",
-    button: "Always Yours 💖"
-  });
-}
-</script>
-<body>
-<button onclick="showLove()">I Love You Dipti Ji 💖</button>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <body>
+<button onclick="showLove()">💖 I Love You Dipti Ji 💖</button>
   <!-- Background Music -->
   <audio autoplay loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
@@ -101,13 +91,18 @@ function showLove() {
       Hamesha Aapka 💞 <br>
       — Aapka Husband 💋
     </div>
-  </div>
-
-  <script>
-    function loveMessage() {
-      alert("Dipti ji ❤️\nAap meri zindagi ki sabse pyaari chocolate ho.\nI Love You Today, Tomorrow & Forever 😘🍫");
-    }
-  </script>
-
-</body>
+</div>
+<script>
+function showLove() {
+  Swal.fire({
+    title: 'Dipti ji ❤️',
+    text: 'Aap meri zindagi ki sabse pyaari chocolate ho.\nI Love You Today, Tomorrow & Forever 🥰🍫',
+    icon: 'success',
+    confirmButtonText: 'I Love You 💖',
+    background: '#2c1a12',
+    color: '#fff'
+  });
+}
+</script>
+  </body>
 </html>
